@@ -1,6 +1,7 @@
 const translations = {
   en: {
     "brand.name": "Yingshuang Yang",
+    "skip.content": "Skip to portfolio content",
     "nav.about": "About",
     "nav.projects": "Projects",
     "nav.experience": "Experience",
@@ -108,6 +109,7 @@ const translations = {
   },
   zh: {
     "brand.name": "杨映霜",
+    "skip.content": "跳到作品内容",
     "nav.about": "关于我",
     "nav.projects": "项目",
     "nav.experience": "经历",
@@ -227,6 +229,7 @@ const modalHighlights = document.querySelector("[data-modal-highlights]");
 const modalScreenshots = document.querySelector("[data-modal-screenshots]");
 const projectModalButtons = document.querySelectorAll("[data-project-modal]");
 let activeProject = null;
+let lastFocusedElement = null;
 
 const projectDetails = {
   bike: {
@@ -336,6 +339,9 @@ function renderProjectModal(projectKey) {
   const language = currentLanguage();
   const dictionary = translations[language];
   const project = projectDetails[projectKey];
+  if (!project) {
+    return;
+  }
   const copy = project.copy[language];
 
   activeProject = projectKey;
@@ -374,6 +380,7 @@ function renderProjectModal(projectKey) {
 }
 
 function openProjectModal(projectKey) {
+  lastFocusedElement = document.activeElement;
   renderProjectModal(projectKey);
   modalBackdrop.hidden = false;
   document.body.classList.add("modal-open");
@@ -384,6 +391,34 @@ function closeProjectModal() {
   modalBackdrop.hidden = true;
   document.body.classList.remove("modal-open");
   activeProject = null;
+  if (lastFocusedElement && typeof lastFocusedElement.focus === "function") {
+    lastFocusedElement.focus();
+  }
+  lastFocusedElement = null;
+}
+
+function trapModalFocus(event) {
+  if (event.key !== "Tab" || !modalBackdrop || modalBackdrop.hidden) {
+    return;
+  }
+
+  const focusableElements = modalBackdrop.querySelectorAll(
+    "a[href], button:not([disabled]), [tabindex]:not([tabindex='-1'])"
+  );
+  const firstElement = focusableElements[0];
+  const lastElement = focusableElements[focusableElements.length - 1];
+
+  if (!firstElement || !lastElement) {
+    return;
+  }
+
+  if (event.shiftKey && document.activeElement === firstElement) {
+    event.preventDefault();
+    lastElement.focus();
+  } else if (!event.shiftKey && document.activeElement === lastElement) {
+    event.preventDefault();
+    firstElement.focus();
+  }
 }
 
 function applyLanguage(language) {
@@ -447,5 +482,8 @@ if (modalBackdrop) {
 document.addEventListener("keydown", (event) => {
   if (event.key === "Escape" && modalBackdrop && !modalBackdrop.hidden) {
     closeProjectModal();
+    return;
   }
+
+  trapModalFocus(event);
 });
