@@ -223,17 +223,12 @@ const modalDescription = document.querySelector("[data-modal-description]");
 const modalTags = document.querySelector("[data-modal-tags]");
 const modalHighlights = document.querySelector("[data-modal-highlights]");
 const modalScreenshots = document.querySelector("[data-modal-screenshots]");
-const modalActions = document.querySelector("[data-modal-actions]");
 const projectModalButtons = document.querySelectorAll("[data-project-modal]");
 let activeProject = null;
 
 const projectDetails = {
   bike: {
     tags: ["Python", "Random Forest", "Feature Engineering", "RMSLE 0.4144"],
-    links: [
-      { label: "GitHub", href: "https://github.com/YingshuangYang/bike-sharing-demand" },
-      { labelKey: "projects.report", href: "bike-sharing-demand-report.pdf" }
-    ],
     screenshots: [
       {
         src: "bike-predictions.jpg",
@@ -270,10 +265,6 @@ const projectDetails = {
   customer: {
     tags: ["XGBoost", "Chunk Processing", "Feature Aggregation", "30M rows", "Final RMSE 3.734"],
     tagZh: ["XGBoost", "分块处理", "特征聚合", "3000 万行数据", "最终 RMSE 3.734"],
-    links: [
-      { label: "GitHub", href: "https://github.com/YingshuangYang/Customer-loyalty-prediction" },
-      { labelKey: "projects.report", href: "elo-customer-loyalty-report.pdf" }
-    ],
     screenshots: [
       {
         src: "customer-model-performance.jpg",
@@ -305,9 +296,6 @@ const projectDetails = {
   auction: {
     tags: ["Python", "SQL", "Funnel Analysis", "Cohort Analysis", "22K users"],
     tagZh: ["Python", "SQL", "漏斗分析", "同期群分析", "2.2 万用户"],
-    links: [
-      { label: "GitHub", href: "https://github.com/YingshuangYang/auction-funnel-conversion-analysis" }
-    ],
     screenshots: [],
     copy: {
       en: {
@@ -380,14 +368,6 @@ function renderProjectModal(projectKey) {
     caption.textContent = dictionary[screenshot.captionKey];
     figure.append(image, caption);
     modalScreenshots.appendChild(figure);
-  });
-
-  clearElement(modalActions);
-  project.links.forEach((link) => {
-    const anchor = document.createElement("a");
-    anchor.href = link.href;
-    anchor.textContent = link.labelKey ? dictionary[link.labelKey] : link.label;
-    modalActions.appendChild(anchor);
   });
 }
 
