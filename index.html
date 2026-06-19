@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Yingshuang Yang | Data Analyst Portfolio</title>
+    <meta
+      name="description"
+      content="Data analyst portfolio for Yingshuang Yang, featuring analytics, machine learning, dashboarding, and operational insights."
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="Home" data-i18n="brand.name">Yingshuang Yang</a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#projects" data-i18n="nav.projects">Projects</a>
+        <a href="#experience" data-i18n="nav.experience">Experience</a>
+        <a href="#education" data-i18n="nav.education">Education</a>
+        <a href="#tableau" data-i18n="nav.tableau">Tableau</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+        <a href="#about" data-i18n="nav.about">About</a>
+      </nav>
+      <button class="language-toggle" type="button" data-language-toggle aria-label="Switch to Chinese">
+        中文
+      </button>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="intro-title">
+        <div class="hero-copy">
+          <p class="eyebrow" data-i18n="hero.eyebrow">Data Analytics · Machine Learning · KPI Reporting</p>
+          <h1 id="intro-title" data-i18n="hero.title">Hi, I am Yingshuang Yang.</h1>
+          <p class="lede" data-i18n="hero.lede">
+            I am a data analyst with an M.S. in Data Science and experience
+            transforming large-scale, multi-source operational data into
+            actionable insights, KPI reporting, and business decisions. I am
+            seeking Data Analyst and Data Scientist roles where I can apply
+            analytics, machine learning, and visualization to solve practical
+            business problems.
+          </p>
+          <div class="actions" aria-label="Primary actions">
+            <a class="button primary" href="#projects">
+              <span aria-hidden="true">↘</span>
+              <span data-i18n="hero.viewProjects">View Projects</span>
+            </a>
+            <a class="button secondary" href="resume.pdf">
+              <span aria-hidden="true">↓</span>
+              <span data-i18n="hero.downloadResume">Download Resume</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-panel" aria-label="Portfolio snapshot">
+          <div class="metric">
+            <span class="metric-value">1M+</span>
+            <span class="metric-label" data-i18n="hero.metricRecords">service records analyzed</span>
+          </div>
+          <div class="metric">
+            <span class="metric-value">4.0</span>
+            <span class="metric-label" data-i18n="hero.metricGpa">M.S. Data Science GPA</span>
+          </div>
+          <div class="metric wide">
+            <span class="metric-value" data-i18n="hero.metricFocus">Focus</span>
+            <span class="metric-label" data-i18n="hero.metricFocusText">Operational analytics, A/B testing, dashboards, ML modeling</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="projects" aria-labelledby="projects-title">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="projects.eyebrow">Selected work</p>
+          <h2 id="projects-title" data-i18n="projects.title">Selected Data Projects</h2>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-visual visual-teal" aria-hidden="true">
+              <span data-i18n="projects.bike.badge">Forecasting</span>
+            </div>
+            <div class="project-body">
+              <h3 data-i18n="projects.bike.title">Bike Sharing Demand Prediction</h3>
+              <p data-i18n="projects.bike.desc">
+                Predicted hourly bike rental demand from time, season, weather,
+                temperature, humidity, and windspeed data to support bike
+                placement and operational planning.
+              </p>
+              <ul class="tag-list" aria-label="Tools used">
+                <li>Python</li>
+                <li>Random Forest</li>
+                <li>Feature Engineering</li>
+                <li>RMSLE 0.4144</li>
+              </ul>
+              <div class="card-actions">
+                <button type="button" data-project-modal="bike" data-i18n="projects.details">Details</button>
+                <a href="https://github.com/YingshuangYang/bike-sharing-demand" aria-label="Open bike sharing demand repository">GitHub</a>
+                <a href="bike-sharing-demand-report.pdf" aria-label="Open bike sharing demand report" data-i18n="projects.report">Report</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-visual visual-rose" aria-hidden="true">
+              <span data-i18n="projects.customer.badge">Loyalty</span>
+            </div>
+            <div class="project-body">
+              <h3 data-i18n="projects.customer.title">Customer Loyalty Prediction</h3>
+              <p data-i18n="projects.customer.desc">
+                Built a customer loyalty prediction pipeline for Elo merchant
+                recommendations using historical and new merchant transactions,
+                merchant metadata, and card-level aggregation.
+              </p>
+              <ul class="tag-list" aria-label="Tools used">
+                <li>XGBoost</li>
+                <li>Chunk Processing</li>
+                <li>Feature Aggregation</li>
+                <li data-i18n="projects.customer.tagRows">30M rows</li>
+                <li data-i18n="projects.customer.tagRmse">Final RMSE 3.734</li>
+              </ul>
+              <div class="card-actions">
+                <button type="button" data-project-modal="customer" data-i18n="projects.details">Details</button>
+                <a href="https://github.com/YingshuangYang/Customer-loyalty-prediction" aria-label="Open customer loyalty prediction repository">GitHub</a>
+                <a href="elo-customer-loyalty-report.pdf" aria-label="Open customer loyalty prediction report" data-i18n="projects.report">Report</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-visual visual-gold" aria-hidden="true">
+              <span data-i18n="projects.auction.badge">Funnel</span>
+            </div>
+            <div class="project-body">
+              <h3 data-i18n="projects.auction.title">Auction Funnel Conversion Analysis</h3>
+              <p data-i18n="projects.auction.desc">
+                Analyzed a synthetic auction marketplace funnel to identify
+                signup-to-bid drop-offs, segment performance differences, and
+                product opportunities for improving bidder activation.
+              </p>
+              <ul class="tag-list" aria-label="Tools used">
+                <li>Python</li>
+                <li>SQL</li>
+                <li>Funnel Analysis</li>
+                <li>Cohort Analysis</li>
+              </ul>
+              <div class="card-actions">
+                <button type="button" data-project-modal="auction" data-i18n="projects.details">Details</button>
+                <a href="https://github.com/YingshuangYang/auction-funnel-conversion-analysis" aria-label="Open auction funnel conversion analysis repository">GitHub</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <div class="modal-backdrop" data-modal-backdrop hidden>
+        <section
+          class="project-modal"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="project-modal-title"
+          aria-describedby="project-modal-description"
+        >
+          <button class="modal-close" type="button" data-modal-close aria-label="Close project details">×</button>
+          <p class="eyebrow" data-modal-badge></p>
+          <h2 id="project-modal-title" data-modal-title></h2>
+          <p id="project-modal-description" data-modal-description></p>
+          <ul class="tag-list modal-tags" data-modal-tags aria-label="Project tools"></ul>
+          <ul class="project-highlights" data-modal-highlights aria-label="Project highlights"></ul>
+          <div class="project-screenshots" data-modal-screenshots aria-label="Project screenshots"></div>
+          <div class="card-actions modal-actions" data-modal-actions></div>
+        </section>
+      </div>
+
+      <section class="section timeline-section" id="experience" aria-labelledby="experience-title">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="experience.eyebrow">Work history</p>
+          <h2 id="experience-title" data-i18n="experience.title">Experience</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="timeline-meta">
+              <span data-i18n="experience.gov.org">Administrative Examination and Approval Bureau</span>
+              <span data-i18n="experience.gov.date">Nov 2015 - Jun 2024</span>
+              <ul class="tag-list experience-tags" aria-label="Keywords">
+                <li>Python</li>
+                <li>PySpark</li>
+                <li>MySQL</li>
+                <li>Tableau</li>
+                <li>A/B Testing</li>
+                <li>KPI Reporting</li>
+              </ul>
+            </div>
+            <div class="timeline-content">
+              <h3 data-i18n="experience.gov.role">Data Analyst</h3>
+              <p data-i18n="experience.gov.desc">
+                Supported operational analytics, citizen service reporting, KPI
+                monitoring, and service optimization across government
+                departments in Chengdu, China.
+              </p>
+              <ul class="impact-list">
+                <li data-i18n="experience.gov.b1">Processed 1M+ multi-channel citizen service records with Python and PySpark, using K-means imputation and Isolation Forest anomaly detection.</li>
+                <li data-i18n="experience.gov.b2">Analyzed 300K+ monthly service records in MySQL, reducing data refresh time by 90% through query optimization.</li>
+                <li data-i18n="experience.gov.b3">Built Tableau KPI dashboards for resolution time, online completion rate, and departmental performance, improving reporting efficiency by 70% for 44 departments.</li>
+                <li data-i18n="experience.gov.b4">Designed A/B tests for FAQ release timing, increasing WeChat engagement by 150% and reducing inquiry load.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-meta">
+              <span>Auxxit</span>
+              <span data-i18n="experience.auxxit.date">May 2025 - Jul 2025</span>
+              <ul class="tag-list experience-tags" aria-label="Keywords">
+                <li>SQL</li>
+                <li>Power BI</li>
+                <li>Logistic Regression</li>
+                <li>Funnel Analysis</li>
+                <li>Conversion Modeling</li>
+              </ul>
+            </div>
+            <div class="timeline-content">
+              <h3 data-i18n="experience.auxxit.role">Data Analyst Intern</h3>
+              <p data-i18n="experience.auxxit.desc">
+                Analyzed auction funnel behavior, conversion drivers, and
+                marketplace performance for a remote U.S. startup.
+              </p>
+              <ul class="impact-list">
+                <li data-i18n="experience.auxxit.b1">Built a logistic regression conversion model to quantify stage-level drop-off drivers and improve auction conversion from 18% to 21%.</li>
+                <li data-i18n="experience.auxxit.b2">Created SQL pipelines on 20K+ user events and 3K+ weekly transactions to evaluate behavioral drivers across user segments.</li>
+                <li data-i18n="experience.auxxit.b3">Developed a real-time Power BI dashboard for GMV, active auctions, and bidder participation, reducing weekly reporting time from 4 hours to 1 hour.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-meta">
+              <span data-i18n="experience.csmSocial.org">Colorado School of Mines</span>
+              <span data-i18n="experience.csmSocial.date">Jul 2025 - May 15, 2026</span>
+              <ul class="tag-list experience-tags" aria-label="Keywords">
+                <li>SQL</li>
+                <li>Power BI</li>
+                <li>LinkedIn Analytics</li>
+                <li>CTR</li>
+                <li>Content Strategy</li>
+              </ul>
+            </div>
+            <div class="timeline-content">
+              <h3 data-i18n="experience.csmSocial.role">Social Media Assistant, LinkedIn Analytics & Content Strategy</h3>
+              <p data-i18n="experience.csmSocial.desc">
+                Analyze LinkedIn engagement and content performance to guide
+                audience growth and content strategy.
+              </p>
+              <ul class="impact-list">
+                <li data-i18n="experience.csmSocial.b1">Built SQL pipelines to analyze impressions, CTR, high-performing content themes, and optimal posting times.</li>
+                <li data-i18n="experience.csmSocial.b2">Developed Power BI dashboards tracking reach and search appearances, supporting content optimization.</li>
+                <li data-i18n="experience.csmSocial.b3">Helped grow followers from 0 to 275+ and increased impressions from 200 to 600.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-meta">
+              <span data-i18n="experience.ta.org">Colorado School of Mines</span>
+              <span data-i18n="experience.ta.date">Aug 2025 - Dec 2025</span>
+              <ul class="tag-list experience-tags" aria-label="Keywords">
+                <li>Machine Learning</li>
+                <li>Preprocessing</li>
+                <li>Feature Engineering</li>
+                <li>Model Debugging</li>
+              </ul>
+            </div>
+            <div class="timeline-content">
+              <h3 data-i18n="experience.ta.role">Teaching Assistant, Introduction to Machine Learning</h3>
+              <p data-i18n="experience.ta.desc">
+                Supported students with preprocessing, feature engineering,
+                overfitting, and recurring model debugging challenges.
+              </p>
+              <ul class="impact-list">
+                <li data-i18n="experience.ta.b1">Identified common failure patterns in student projects and improved support efficiency by reducing repeated debugging requests.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section education-section" id="education" aria-labelledby="education-title">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="education.eyebrow">Academic background</p>
+          <h2 id="education-title" data-i18n="education.title">Education</h2>
+        </div>
+        <div class="education-grid">
+          <article class="education-card">
+            <p class="date-range" data-i18n="education.mines.date">Aug 2024 - May 2026</p>
+            <h3 data-i18n="education.mines.degree">Master of Science in Data Science</h3>
+            <p data-i18n="education.mines.school">Colorado School of Mines · Golden, Colorado · GPA 4.0</p>
+            <ul class="tag-list" aria-label="Relevant coursework">
+              <li data-i18n="education.courseMl">Machine Learning</li>
+              <li data-i18n="education.courseStats">Statistics</li>
+              <li data-i18n="education.courseViz">Data Visualization</li>
+            </ul>
+          </article>
+          <article class="education-card">
+            <p class="date-range" data-i18n="education.shou.date">Aug 2011 - Jun 2015</p>
+            <h3 data-i18n="education.shou.degree">Bachelor of Management in Management Information Systems</h3>
+            <p data-i18n="education.shou.school">
+              Shanghai Ocean University · Shanghai, China
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section tableau-band" id="tableau" aria-labelledby="tableau-title">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="tableau.eyebrow">Dashboard</p>
+          <h2 id="tableau-title" data-i18n="tableau.title">Tableau Analytics</h2>
+        </div>
+        <div class="tableau-layout">
+          <div>
+            <h3 data-i18n="tableau.reportTitle">Pizza Sales Report</h3>
+            <p data-i18n="tableau.desc">
+              Interactive dashboard analyzing pizza sales performance across
+              time, categories, and sizes. Users can filter by pizza category and
+              order date to explore revenue, order volume, average order value,
+              busiest hours, weekly trends, and product mix.
+            </p>
+          </div>
+          <a class="button dark" href="https://public.tableau.com/app/profile/yingshuang.yang1335/viz/Book1_17502129852380/Home" aria-label="Open Tableau dashboard">
+            <span aria-hidden="true">↗</span>
+            <span data-i18n="tableau.open">Open Tableau</span>
+          </a>
+        </div>
+        <div class="tableau-embed" aria-label="Interactive Pizza Sales Tableau dashboard">
+          <iframe
+            title="Pizza Sales Report Tableau dashboard"
+            src="https://public.tableau.com/views/Book1_17502129852380/Home?:showVizHome=no&amp;:embed=true&amp;:toolbar=yes"
+            loading="lazy"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+
+      <section class="contact" id="contact" aria-labelledby="contact-title">
+        <p class="eyebrow" data-i18n="contact.eyebrow">Contact</p>
+        <h2 id="contact-title" data-i18n="contact.title">Let us talk about data work.</h2>
+        <p class="contact-note" data-i18n="contact.note">
+          Based in Longmont, Colorado and open to relocation.
+        </p>
+        <div class="contact-links">
+          <a href="mailto:yingshuangyang1222@gmail.com">Email</a>
+          <a href="https://www.linkedin.com/in/yangyingshuang/">LinkedIn</a>
+          <a href="https://github.com/YingshuangYang">GitHub</a>
+          <a href="resume.pdf" data-i18n="contact.resume">Resume</a>
+        </div>
+      </section>
+
+      <section class="section about-section" id="about" aria-labelledby="about-title">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="about.eyebrow">About me</p>
+          <h2 id="about-title" data-i18n="about.title">Personal Story</h2>
+        </div>
+        <div class="about-layout">
+          <div class="about-copy">
+            <p data-i18n="about.p1">
+              I specialize in turning complex operational data into clear
+              business and service insights. My work combines SQL,
+              Python, dashboarding, experimentation, and machine learning to help
+              teams understand performance and act faster.
+            </p>
+            <p data-i18n="about.p2">
+              Before completing my M.S. in Data Science at Colorado School of
+              Mines, I spent years analyzing public service operations in China,
+              where I built KPI dashboards, automated reporting, and improved
+              inquiry response strategies. I am now focused on data analyst and
+              data science roles where analytics can directly shape decisions.
+            </p>
+            <p data-i18n="about.p3">
+              I am also self-learning AI agents and exploring how LLM-powered
+              workflows can support analytics, automation, and decision-making.
+            </p>
+          </div>
+          <div class="quick-facts" aria-label="Quick personal facts">
+            <div>
+              <span class="fact-label" data-i18n="about.factLooking">Looking for</span>
+              <span class="fact-value" data-i18n="about.factLookingText">Data Analyst / Data Scientist roles in the U.S.</span>
+            </div>
+            <div>
+              <span class="fact-label" data-i18n="about.factStrengths">Strengths</span>
+              <span class="fact-value" data-i18n="about.factStrengthsText">SQL, Python, dashboards, experimentation</span>
+            </div>
+            <div>
+              <span class="fact-label" data-i18n="about.factLocation">Location</span>
+              <span class="fact-value" data-i18n="about.factLocationText">Longmont, Colorado · Open to relocation</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-beyond">
+          <div class="beyond-copy">
+            <p data-i18n="beyond.desc">
+              Outside of analytics, I enjoy dancing, hiking, and spending time
+              with my dog. These moments keep me energized, curious, and grounded
+              outside of school and work.
+            </p>
+          </div>
+          <div class="photo-grid" aria-label="Personal interests photos">
+            <figure class="photo-card">
+              <img class="photo-image" src="dancing-photo.jpg" alt="Yingshuang dancing outdoors">
+              <figcaption>
+                <span data-i18n="beyond.dancing">Dancing</span>
+                <a href="dancing-clip.mp4" data-i18n="beyond.watchClip">Watch clip</a>
+              </figcaption>
+            </figure>
+            <figure class="photo-card">
+              <img class="photo-image" src="hiking-photo.jpg" alt="Yingshuang hiking by a mountain lake with two dogs">
+              <figcaption data-i18n="beyond.hiking">Hiking</figcaption>
+            </figure>
+            <figure class="photo-card">
+              <img class="photo-image dog-photo" src="dog-photo.jpg" alt="Yingshuang's dog on a mountain trail">
+              <figcaption data-i18n="beyond.dog">With my dog</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
