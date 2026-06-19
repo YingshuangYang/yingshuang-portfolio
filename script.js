@@ -8,8 +8,9 @@ const translations = {
     "nav.tableau": "Tableau",
     "nav.contact": "Contact",
     "hero.eyebrow": "Data Analytics · Machine Learning · KPI Reporting",
-    "hero.title": "Hi, I am Yingshuang Yang.",
-    "hero.lede": "I am a data analyst with an M.S. in Data Science and experience transforming large-scale, multi-source operational data into actionable insights, KPI reporting, and business decisions. I am seeking Data Analyst and Data Scientist roles where I can apply analytics, machine learning, and visualization to solve practical business problems.",
+    "hero.title": "Yingshuang Yang",
+    "hero.slogan": "Turning complex data into clear decisions.",
+    "hero.lede": "I am a data analyst with an M.S. in Data Science who turns operational and behavioral data into actionable insights, dashboards, experiments, and machine learning workflows for practical business decisions.",
     "hero.viewProjects": "View Projects",
     "hero.downloadResume": "Download Resume",
     "hero.metricRecords": "service records analyzed",
@@ -18,9 +19,9 @@ const translations = {
     "hero.metricFocusText": "Operational analytics, A/B testing, dashboards, ML modeling",
     "about.eyebrow": "About me",
     "about.title": "Personal Story",
-    "about.p1": "I specialize in turning complex operational data into clear business and service insights. My work combines SQL, Python, dashboarding, experimentation, and machine learning to help teams understand performance and act faster.",
-    "about.p2": "Before completing my M.S. in Data Science at Colorado School of Mines, I spent years analyzing public service operations in China, where I built KPI dashboards, automated reporting, and improved inquiry response strategies. I am now focused on data analyst and data science roles where analytics can directly shape decisions.",
-    "about.p3": "I am also self-learning AI agents and exploring how LLM-powered workflows can support analytics, automation, and decision-making.",
+    "about.p1": "I like learning emerging technologies and bringing them into my workflow. Recently, I have been studying AI agents and exploring how agent-based workflows can help me analyze, automate, and work more efficiently.",
+    "about.p2": "The work I enjoy most starts with data, but does not stop at surface-level metrics. I like digging into the deeper reasons behind user behavior, operational changes, and business outcomes.",
+    "about.p3": "I also enjoy collaborating with different teams to turn analysis into better product experiences, higher efficiency, and lower operating costs.",
     "about.factLooking": "Looking for",
     "about.factLookingText": "Data Analyst / Data Scientist roles in the U.S.",
     "about.factStrengths": "Strengths",
@@ -33,14 +34,14 @@ const translations = {
     "projects.report": "Report",
     "projects.bike.badge": "Forecasting",
     "projects.bike.title": "Bike Sharing Demand Prediction",
-    "projects.bike.desc": "Predicted hourly bike rental demand from time, season, weather, temperature, humidity, and windspeed data to support bike placement and operational planning.",
+    "projects.bike.desc": "Predicted bike rental volume from time, weather, and seasonal patterns so operators can place bikes where demand is expected, improving availability and utilization.",
     "projects.bike.h1": "Engineered hour, weekday, month, peak-hour, rolling, and temperature features from rental and weather data.",
     "projects.bike.h2": "Compared Random Forest, SVR, and Ridge Regression, then tuned Random Forest with cross-validation.",
     "projects.bike.fig1": "Predictions vs. actuals",
     "projects.bike.fig2": "Feature importance",
     "projects.customer.badge": "Loyalty",
     "projects.customer.title": "Customer Loyalty Prediction",
-    "projects.customer.desc": "Built a customer loyalty prediction pipeline for Elo merchant recommendations using historical and new merchant transactions, merchant metadata, and card-level aggregation.",
+    "projects.customer.desc": "Predicted customer loyalty for Elo merchant recommendations so higher-loyalty customers can be prioritized for targeted promotions and more precise campaign allocation.",
     "projects.customer.tagRows": "30M rows",
     "projects.customer.tagRmse": "Final RMSE 3.734",
     "projects.customer.h1": "Processed large transaction tables in chunks and created card-level aggregate features from historical and new merchant data.",
@@ -48,7 +49,7 @@ const translations = {
     "projects.customer.fig": "Sample benchmark for model selection",
     "projects.auction.badge": "Funnel",
     "projects.auction.title": "Auction Funnel Conversion Analysis",
-    "projects.auction.desc": "Analyzed a synthetic auction marketplace funnel to identify signup-to-bid drop-offs, segment performance differences, and product opportunities for improving bidder activation.",
+    "projects.auction.desc": "Analyzed an auction marketplace funnel to find where users drop off most, helping teams improve activation and increase bid and auction conversion rates.",
     "experience.eyebrow": "Work history",
     "experience.title": "Experience",
     "experience.csmSocial.org": "Colorado School of Mines",
@@ -114,8 +115,9 @@ const translations = {
     "nav.tableau": "Tableau",
     "nav.contact": "联系",
     "hero.eyebrow": "数据分析 · 机器学习 · KPI 报告",
-    "hero.title": "你好，\n我是杨映霜。",
-    "hero.lede": "我是一名数据分析师，拥有数据科学硕士背景，并具备将大规模、多来源运营数据转化为可执行洞察、KPI 报告和业务决策支持的经验。我正在寻找 Data Analyst / Data Scientist 相关岗位，希望用数据分析、机器学习和可视化解决实际业务问题。",
+    "hero.title": "杨映霜",
+    "hero.slogan": "把复杂数据转化为清晰决策。",
+    "hero.lede": "我是一名拥有数据科学硕士背景的数据分析师，擅长将运营数据和用户行为数据转化为可执行洞察、仪表盘、实验分析和机器学习流程，支持实际业务决策。",
     "hero.viewProjects": "查看项目",
     "hero.downloadResume": "下载简历",
     "hero.metricRecords": "服务记录分析经验",
@@ -124,9 +126,9 @@ const translations = {
     "hero.metricFocusText": "运营分析、A/B 测试、仪表盘、机器学习建模",
     "about.eyebrow": "关于我",
     "about.title": "个人介绍",
-    "about.p1": "我擅长把复杂的运营数据转化为清晰的业务与服务洞察。我的工作结合 SQL、Python、仪表盘、实验分析和机器学习，帮助团队理解表现并更快采取行动。",
-    "about.p2": "在 Colorado School of Mines 攻读数据科学硕士之前，我长期参与中国公共服务运营数据分析，搭建 KPI 仪表盘、自动化报告，并优化咨询响应策略。现在我专注于数据分析和数据科学相关岗位，希望让数据分析直接影响业务决策。",
-    "about.p3": "我也在自学 AI agents，并探索 LLM 驱动的工作流如何支持数据分析、自动化和决策。",
+    "about.p1": "我喜欢学习先进的新技术，并把它们融入自己的工作流程。最近我正在学习 AI agents，探索如何用 agent-based workflows 帮助自己更高效地分析、自动化和完成工作。",
+    "about.p2": "我喜欢的工作是从数据出发，但不只停留在表面的指标变化。我喜欢继续追问用户行为、运营变化和业务结果背后的深层原因。",
+    "about.p3": "我也喜欢和不同团队合作，把分析结果转化为更好的产品使用体验、更高的工作效率和更低的运营成本。",
     "about.factLooking": "目标岗位",
     "about.factLookingText": "美国 Data Analyst / Data Scientist 相关岗位",
     "about.factStrengths": "优势",
@@ -139,14 +141,14 @@ const translations = {
     "projects.report": "报告",
     "projects.bike.badge": "预测建模",
     "projects.bike.title": "共享单车需求预测",
-    "projects.bike.desc": "基于时间、季节、天气、温度、湿度和风速等数据预测每小时单车租赁需求，为车辆投放和运营规划提供支持。",
+    "projects.bike.desc": "基于时间、天气和季节模式预测单车租赁数量，帮助运营方提前判断需求位置，更合理投放车辆，从而提升可用性和车辆利用率。",
     "projects.bike.h1": "从租赁和天气数据中构建小时、星期、月份、高峰时段、滚动统计和温度相关特征。",
     "projects.bike.h2": "比较 Random Forest、SVR 和 Ridge Regression，并使用交叉验证调优 Random Forest。",
     "projects.bike.fig1": "预测值与实际值",
     "projects.bike.fig2": "特征重要性",
     "projects.customer.badge": "客户忠诚度",
     "projects.customer.title": "客户忠诚度预测",
-    "projects.customer.desc": "整合历史交易、新商户交易、商户元数据和卡片级聚合特征，为 Elo 商户推荐场景预测客户忠诚度。",
+    "projects.customer.desc": "为 Elo 商户推荐场景预测客户忠诚度，帮助识别更适合投放 promotion 的高忠诚度客户，提高精准营销和资源分配效率。",
     "projects.customer.tagRows": "3000 万行数据",
     "projects.customer.tagRmse": "最终 RMSE 3.734",
     "projects.customer.h1": "分块处理大型交易表，并从历史交易和新商户交易中构建卡片级聚合特征。",
@@ -154,7 +156,7 @@ const translations = {
     "projects.customer.fig": "模型选择阶段的小样本 benchmark",
     "projects.auction.badge": "漏斗分析",
     "projects.auction.title": "拍卖漏斗转化分析",
-    "projects.auction.desc": "分析合成拍卖平台漏斗，识别注册到首次出价的流失点、不同渠道与设备分群表现差异，并提出提升 bidder activation 的产品机会。",
+    "projects.auction.desc": "分析拍卖平台漏斗，找出用户流失率最高的环节，帮助团队优化激活路径，提高出价率和拍卖转化率。",
     "experience.eyebrow": "工作经历",
     "experience.title": "经历",
     "experience.csmSocial.org": "Colorado School of Mines",
@@ -245,18 +247,18 @@ const projectDetails = {
       en: {
         badge: "Forecasting",
         title: "Bike Sharing Demand Prediction",
-        description: "Predicted hourly bike rental demand from time, season, weather, temperature, humidity, and windspeed data to support bike placement and operational planning.",
+        description: "Predicted bike rental volume from time, weather, and seasonal patterns so operators can place bikes where demand is expected, improving availability and utilization.",
         highlights: [
-          "Engineered hour, weekday, month, peak-hour, rolling, and temperature features from rental and weather data.",
+          "Used time, weather, temperature, humidity, and windspeed features to predict rental demand more accurately.",
           "Compared Random Forest, SVR, and Ridge Regression, then tuned Random Forest with cross-validation."
         ]
       },
       zh: {
         badge: "预测建模",
         title: "共享单车需求预测",
-        description: "基于时间、季节、天气、温度、湿度和风速等数据预测每小时单车租赁需求，为车辆投放和运营规划提供支持。",
+        description: "基于时间、天气和季节模式预测单车租赁数量，帮助运营方提前判断需求位置，更合理投放车辆，从而提升可用性和车辆利用率。",
         highlights: [
-          "从租赁和天气数据中构建小时、星期、月份、高峰时段、滚动统计和温度相关特征。",
+          "使用时间、天气、温度、湿度和风速等特征提升租赁需求预测准确性。",
           "比较 Random Forest、SVR 和 Ridge Regression，并使用交叉验证调优 Random Forest。"
         ]
       }
@@ -276,18 +278,18 @@ const projectDetails = {
       en: {
         badge: "Loyalty",
         title: "Customer Loyalty Prediction",
-        description: "Built a customer loyalty prediction pipeline for Elo merchant recommendations using historical and new merchant transactions, merchant metadata, and card-level aggregation.",
+        description: "Predicted customer loyalty for Elo merchant recommendations so higher-loyalty customers can be prioritized for targeted promotions and more precise campaign allocation.",
         highlights: [
-          "Processed large transaction tables in chunks and created card-level aggregate features from historical and new merchant data.",
+          "Created card-level loyalty features from historical transactions, new merchant transactions, and merchant metadata.",
           "Benchmarked models on a smaller sample for selection, then reported final RMSE 3.734 for the selected full workflow."
         ]
       },
       zh: {
         badge: "客户忠诚度",
         title: "客户忠诚度预测",
-        description: "整合历史交易、新商户交易、商户元数据和卡片级聚合特征，为 Elo 商户推荐场景预测客户忠诚度。",
+        description: "为 Elo 商户推荐场景预测客户忠诚度，帮助识别更适合投放 promotion 的高忠诚度客户，提高精准营销和资源分配效率。",
         highlights: [
-          "分块处理大型交易表，并从历史交易和新商户交易中构建卡片级聚合特征。",
+          "整合历史交易、新商户交易、商户元数据和卡片级聚合特征，刻画客户忠诚度。",
           "先用小样本进行模型选择 benchmark，再在最终流程中报告 RMSE 3.734。"
         ]
       }
@@ -301,18 +303,18 @@ const projectDetails = {
       en: {
         badge: "Funnel",
         title: "Auction Funnel Conversion Analysis",
-        description: "Analyzed a synthetic auction marketplace funnel to identify signup-to-bid drop-offs, segment performance differences, and product opportunities for improving bidder activation.",
+        description: "Analyzed an auction marketplace funnel to find where users drop off most, helping teams improve activation and increase bid and auction conversion rates.",
         highlights: [
-          "Built a portfolio-safe marketplace funnel case study using synthetic event data, user-level features, SQL-style funneling, and Python analysis.",
+          "Mapped the user journey from signup to first bid and auction win to identify the highest-friction funnel stages.",
           "Analyzed 22,000 users and 15,201 bid records, finding 33.2% signup-to-first-bid conversion and 12.1% signup-to-auction-win conversion."
         ]
       },
       zh: {
         badge: "漏斗分析",
         title: "拍卖漏斗转化分析",
-        description: "分析合成拍卖平台漏斗，识别注册到首次出价的流失点、不同渠道与设备分群表现差异，并提出提升 bidder activation 的产品机会。",
+        description: "分析拍卖平台漏斗，找出用户流失率最高的环节，帮助团队优化激活路径，提高出价率和拍卖转化率。",
         highlights: [
-          "使用合成事件数据、用户级特征、SQL 风格漏斗分析和 Python 分析流程，构建可公开展示的 marketplace funnel case study。",
+          "梳理用户从注册到首次出价、再到赢得拍卖的路径，定位摩擦最高的漏斗环节。",
           "分析 2.2 万用户和 15,201 条出价记录，发现注册到首次出价转化率为 33.2%，注册到赢得拍卖转化率为 12.1%。"
         ]
       }
