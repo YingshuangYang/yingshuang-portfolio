@@ -1,6 +1,6 @@
 const translations = {
   en: {
-    "brand.name": "Jackie",
+    "brand.name": "Yingshuang(Jackie) Yang",
     "skip.content": "Skip to portfolio content",
     "nav.about": "About",
     "nav.projects": "Projects",
@@ -9,7 +9,7 @@ const translations = {
     "nav.tableau": "Tableau",
     "nav.contact": "Contact",
     "hero.eyebrow": "Data Analytics · Machine Learning · KPI Reporting",
-    "hero.title": "Jackie",
+    "hero.title": "Yingshuang(Jackie) Yang",
     "hero.slogan": "Turning complex data into clear decisions.",
     "hero.lede": "I am a data scientist with an M.S. in Data Science who turns operational and behavioral data into actionable insights, dashboards, experiments, and machine learning workflows for practical business decisions.",
     "hero.viewProjects": "View Projects",
@@ -433,8 +433,8 @@ function applyLanguage(language) {
 
   document.documentElement.lang = language === "zh" ? "zh-Hans" : "en";
   document.title = language === "zh"
-    ? "Jackie | 数据科学作品集"
-    : "Jackie | Data Scientist Portfolio";
+    ? "Yingshuang(Jackie) Yang | 数据科学作品集"
+    : "Yingshuang(Jackie) Yang | Data Scientist Portfolio";
 
   if (languageToggle) {
     languageToggle.textContent = language === "zh" ? "EN" : "中文";
