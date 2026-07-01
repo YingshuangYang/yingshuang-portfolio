@@ -335,6 +335,28 @@ function clearElement(element) {
   }
 }
 
+function renderHeroTitle(element, language) {
+  clearElement(element);
+
+  if (language === "zh") {
+    element.setAttribute("aria-label", translations.zh["hero.title"]);
+    element.textContent = translations.zh["hero.title"];
+    return;
+  }
+
+  element.setAttribute("aria-label", translations.en["hero.title"]);
+  [
+    ["name-given", "Yingshuang"],
+    ["name-nickname", "(Jackie)"],
+    ["name-family", "Yang"]
+  ].forEach(([className, text]) => {
+    const part = document.createElement("span");
+    part.className = className;
+    part.textContent = text;
+    element.appendChild(part);
+  });
+}
+
 function renderProjectModal(projectKey) {
   const language = currentLanguage();
   const dictionary = translations[language];
@@ -427,7 +449,11 @@ function applyLanguage(language) {
   translatableElements.forEach((element) => {
     const key = element.dataset.i18n;
     if (dictionary[key]) {
-      element.textContent = dictionary[key];
+      if (key === "hero.title") {
+        renderHeroTitle(element, language);
+      } else {
+        element.textContent = dictionary[key];
+      }
     }
   });
 
