@@ -28,7 +28,7 @@ const translations = {
     "about.factStrengths": "Strengths",
     "about.factStrengthsText": "SQL, Python, dashboards, experimentation",
     "about.factLocation": "Location",
-    "about.factLocationText": "Longmont, Colorado · Open to relocation",
+    "about.factLocationText": "Open to relocation",
     "projects.eyebrow": "Selected work",
     "projects.title": "Selected Data Projects",
     "projects.details": "Details",
@@ -104,7 +104,7 @@ const translations = {
     "tableau.open": "Open Tableau",
     "contact.eyebrow": "Contact",
     "contact.title": "Let us talk about data work.",
-    "contact.note": "Based in Longmont, Colorado and open to relocation.",
+    "contact.note": "Open to relocation.",
     "contact.resume": "Resume"
   },
   zh: {
@@ -136,7 +136,7 @@ const translations = {
     "about.factStrengths": "优势",
     "about.factStrengthsText": "SQL、Python、仪表盘、实验分析",
     "about.factLocation": "地点",
-    "about.factLocationText": "Longmont, Colorado · 接受搬迁",
+    "about.factLocationText": "接受搬迁",
     "projects.eyebrow": "精选作品",
     "projects.title": "数据项目",
     "projects.details": "详情",
@@ -212,7 +212,7 @@ const translations = {
     "tableau.open": "打开 Tableau",
     "contact.eyebrow": "联系",
     "contact.title": "欢迎和我聊聊数据相关机会。",
-    "contact.note": "目前在 Longmont, Colorado，也接受搬迁。",
+    "contact.note": "接受搬迁。",
     "contact.resume": "简历"
   }
 };
