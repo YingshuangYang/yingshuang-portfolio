@@ -1,6 +1,6 @@
 const translations = {
   en: {
-    "brand.name": "Yingshuang Yang",
+    "brand.name": "Jackie",
     "skip.content": "Skip to portfolio content",
     "nav.about": "About",
     "nav.projects": "Projects",
@@ -9,9 +9,9 @@ const translations = {
     "nav.tableau": "Tableau",
     "nav.contact": "Contact",
     "hero.eyebrow": "Data Analytics · Machine Learning · KPI Reporting",
-    "hero.title": "Yingshuang Yang",
+    "hero.title": "Jackie",
     "hero.slogan": "Turning complex data into clear decisions.",
-    "hero.lede": "I am a data analyst with an M.S. in Data Science who turns operational and behavioral data into actionable insights, dashboards, experiments, and machine learning workflows for practical business decisions.",
+    "hero.lede": "I am a data scientist with an M.S. in Data Science who turns operational and behavioral data into actionable insights, dashboards, experiments, and machine learning workflows for practical business decisions.",
     "hero.viewProjects": "View Projects",
     "hero.downloadResume": "Download Resume",
     "hero.metricRecords": "service records analyzed",
@@ -24,7 +24,7 @@ const translations = {
     "about.p2": "The work I enjoy most starts with data, but does not stop at surface-level metrics. I like digging into the deeper reasons behind user behavior, operational changes, and business outcomes.",
     "about.p3": "I also enjoy collaborating with different teams to turn analysis into better product experiences, higher efficiency, and lower operating costs.",
     "about.factLooking": "Looking for",
-    "about.factLookingText": "Data Analyst / Data Scientist roles in the U.S.",
+    "about.factLookingText": "Data Scientist roles in the U.S.",
     "about.factStrengths": "Strengths",
     "about.factStrengthsText": "SQL, Python, dashboards, experimentation",
     "about.factLocation": "Location",
@@ -61,14 +61,14 @@ const translations = {
     "experience.csmSocial.b2": "Developed Power BI dashboards tracking reach and search appearances, supporting content optimization.",
     "experience.csmSocial.b3": "Helped grow followers from 0 to 275+ and increased impressions from 200 to 600.",
     "experience.auxxit.date": "May 2025 - Jul 2025",
-    "experience.auxxit.role": "Data Analyst Intern",
+    "experience.auxxit.role": "Data Science Intern",
     "experience.auxxit.desc": "Analyzed auction funnel behavior, conversion drivers, and marketplace performance for a remote U.S. startup.",
     "experience.auxxit.b1": "Built a logistic regression conversion model to quantify stage-level drop-off drivers and improve auction conversion from 18% to 21%.",
     "experience.auxxit.b2": "Created SQL pipelines on 20K+ user events and 3K+ weekly transactions to evaluate behavioral drivers across user segments.",
     "experience.auxxit.b3": "Developed a real-time Power BI dashboard for GMV, active auctions, and bidder participation, reducing weekly reporting time from 4 hours to 1 hour.",
     "experience.gov.org": "Administrative Examination and Approval Bureau",
     "experience.gov.date": "Nov 2015 - Jun 2024",
-    "experience.gov.role": "Data Analyst",
+    "experience.gov.role": "Data Scientist",
     "experience.gov.desc": "Supported operational analytics, citizen service reporting, KPI monitoring, and service optimization across government departments in Chengdu, China.",
     "experience.gov.b1": "Processed 1M+ multi-channel citizen service records with Python and PySpark, using K-means imputation and Isolation Forest anomaly detection.",
     "experience.gov.b2": "Analyzed 300K+ monthly service records in MySQL, reducing data refresh time by 90% through query optimization.",
@@ -119,7 +119,7 @@ const translations = {
     "hero.eyebrow": "数据分析 · 机器学习 · KPI 报告",
     "hero.title": "杨映霜",
     "hero.slogan": "把复杂数据转化为清晰决策。",
-    "hero.lede": "我是一名拥有数据科学硕士背景的数据分析师，擅长将运营数据和用户行为数据转化为可执行洞察、仪表盘、实验分析和机器学习流程，支持实际业务决策。",
+    "hero.lede": "我是一名拥有数据科学硕士背景的数据科学方向从业者，擅长将运营数据和用户行为数据转化为可执行洞察、仪表盘、实验分析和机器学习流程，支持实际业务决策。",
     "hero.viewProjects": "查看项目",
     "hero.downloadResume": "下载简历",
     "hero.metricRecords": "服务记录分析经验",
@@ -132,7 +132,7 @@ const translations = {
     "about.p2": "我喜欢的工作是从数据出发，但不只停留在表面的指标变化。我喜欢继续追问用户行为、运营变化和业务结果背后的深层原因。",
     "about.p3": "我也喜欢和不同团队合作，把分析结果转化为更好的产品使用体验、更高的工作效率和更低的运营成本。",
     "about.factLooking": "目标岗位",
-    "about.factLookingText": "美国 Data Analyst / Data Scientist 相关岗位",
+    "about.factLookingText": "美国 Data Scientist / 数据科学相关岗位",
     "about.factStrengths": "优势",
     "about.factStrengthsText": "SQL、Python、仪表盘、实验分析",
     "about.factLocation": "地点",
@@ -169,14 +169,14 @@ const translations = {
     "experience.csmSocial.b2": "开发 Power BI 仪表盘追踪 reach 和 search appearances，支持内容优化。",
     "experience.csmSocial.b3": "帮助 followers 从 0 增长到 275+，impressions 从 200 提升到 600。",
     "experience.auxxit.date": "2025 年 5 月 - 2025 年 7 月",
-    "experience.auxxit.role": "Data Analyst Intern",
+    "experience.auxxit.role": "Data Science Intern",
     "experience.auxxit.desc": "为美国远程创业公司分析拍卖漏斗行为、转化驱动因素和市场表现。",
     "experience.auxxit.b1": "构建 logistic regression 转化模型，量化各阶段流失驱动因素，并帮助整体拍卖转化率从 18% 提升到 21%。",
     "experience.auxxit.b2": "基于 2 万+ 用户事件和每周 3000+ 交易构建 SQL 分析流程，评估不同用户分群的行为驱动因素。",
     "experience.auxxit.b3": "开发实时 Power BI 仪表盘追踪 GMV、活跃拍卖和出价参与率，将周报时间从 4 小时缩短到 1 小时。",
     "experience.gov.org": "行政审批局",
     "experience.gov.date": "2015 年 11 月 - 2024 年 6 月",
-    "experience.gov.role": "数据分析师",
+    "experience.gov.role": "数据科学家",
     "experience.gov.desc": "支持中国成都政府部门的运营分析、市民服务报告、KPI 监控和服务优化。",
     "experience.gov.b1": "使用 Python 和 PySpark 处理 100 万+ 多渠道市民服务记录，并应用 K-means 插补和 Isolation Forest 异常检测。",
     "experience.gov.b2": "使用 MySQL 分析每月 30 万+ 服务记录，通过查询优化将数据刷新时间减少 90%。",
@@ -433,8 +433,8 @@ function applyLanguage(language) {
 
   document.documentElement.lang = language === "zh" ? "zh-Hans" : "en";
   document.title = language === "zh"
-    ? "Yingshuang Yang | 数据分析作品集"
-    : "Yingshuang Yang | Data Analyst Portfolio";
+    ? "Jackie | 数据科学作品集"
+    : "Jackie | Data Scientist Portfolio";
 
   if (languageToggle) {
     languageToggle.textContent = language === "zh" ? "EN" : "中文";
